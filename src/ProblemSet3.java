@@ -64,7 +64,7 @@ public class ProblemSet3 {
 		ps3.isPrime(1);
 		ps3.isPrime(2);
 		ps3.isPrime(17);
-		ps3.isPrime(10);
+		ps3.isPrime(144);
 	}
 		
 	public void dateFashion(int you, int date) {
@@ -177,6 +177,10 @@ public class ProblemSet3 {
 	}
 	
 	public void isPrime(int n) {
+		if (n < 0) {
+			System.out.println("NOT PRIME");
+			return;
+		}
 		for (int i = 2; i <= Math.sqrt(n); i++) {
 			if (n % i == 0) {
 				System.out.println("NOT PRIME");
